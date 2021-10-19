@@ -16,6 +16,11 @@ body {
   cursor: pointer;
 }
 
+#newBtn:hover {
+  transform: rotate(180deg);
+  transition: all 0.5s linear;
+}
+
 .note-textarea,
 .note-title {
   color: #000000;
