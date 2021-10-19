@@ -19,7 +19,7 @@ app.get('/api/notes', (req, res) => res.status(200).json(db));
 app.post('/api/notes', (req, res) => {
   res.status(201).send(`Received ${req.method} request!`)
   let uuid = uuidv4();
-  req.body['uuid'] = uuid;
+  req.body['id'] = uuid;
   db.push(req.body)
   fs.writeFile('./db/db.json', JSON.stringify(db, null, '\t'), err => err ? console.error(err) : null)
 })
@@ -28,7 +28,7 @@ app.delete('/api/notes/:id', (req, res)=>{
   res.status(203).send(`Received ${req.method} request!`)
   let noteId = req.params.id
   for(let i=0; i<db.length;i++){
-    if(noteId === db[i].uuid){
+    if(noteId === db[i].id){
       db.splice(i, 1)
     }
   }
