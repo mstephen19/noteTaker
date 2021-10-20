@@ -14,15 +14,14 @@ app.use(express.static('public'));
 
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, '/public/notes.html')));
 
-app.get('/api/notes', (req, res) => res.status(200).json(db));
-
-app.post('/api/notes', (req, res) => {
+app.route('/api/notes')
+.get((req, res) => res.status(200).json(db))
+.post((req, res) => {
   res.status(201).send(`Received ${req.method} request!`)
-  let uuid = uuidv4();
-  req.body['id'] = uuid;
+  req.body['id'] = uuidv4();
   db.push(req.body)
   fs.writeFile('./db/db.json', JSON.stringify(db, null, '\t'), err => err ? console.error(err) : null)
-})
+});
 
 app.delete('/api/notes/:id', (req, res)=>{
   res.status(203).send(`Received ${req.method} request!`)
