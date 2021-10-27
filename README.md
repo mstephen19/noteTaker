@@ -1,4 +1,4 @@
-# Note Taker **([Link](https://mstephen19.github.io/newestPortfolio))**
+# Note Taker **([Link](https://salty-plateau-23106.herokuapp.com/))**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -16,19 +16,19 @@ This does **NOT** mean that the app is not working! This app is being hosted on 
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/)
-* [ExpressJS](https://expressjs.com/en/)
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com/en/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Deployed Link
 
-* [Live Site Here](https://salty-plateau-23106.herokuapp.com/)
+- [Live Site Here](https://salty-plateau-23106.herokuapp.com/)
 
 ## Author
 
-**Matt Stephens** 
+**Matt Stephens**
 
 - [Link to Portfolio Site](https://mstephen19.github.io/newestPortfolio)
 - [Link to Github](https://github.com/mstephen19)
@@ -40,4 +40,4 @@ This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* Shoutout to [Jerome](https://www.linkedin.com/in/jeromechenette/) for being such a fantastic instructor
+- Shoutout to [Jerome](https://www.linkedin.com/in/jeromechenette/) for being such a fantastic instructor
